@@ -23,12 +23,12 @@ try:
 #http://www.sstu.ru
         try:
             id1 = param.keys().index('http:/www.sstu.ru{}'.format(str(row[1]).replace('\'','')))
-            print id1, 'http://www.sstu.ru/{}'.format(str(row[1]).replace('\'',''))
+            #print id1, 'http://www.sstu.ru/{}'.format(str(row[1]).replace('\'',''))
             id0 = param.keys().index('http:/www.sstu.ru{}'.format(str(row[0]).replace('\'','')))
-            print id0, 'http://www.sstu.ru/{}'.format(str(row[0]).replace('\'',''))
+            #print id0, 'http://www.sstu.ru/{}'.format(str(row[0]).replace('\'',''))
             file_click.write("{0}\t{1}\t{2}".format(str(id0), str(id1), str(row[2])))
             file_time.write("{0}\t{1}\t{2}".format(str(id0), str(id1), str(row[3]).rstrip("\.0")))
-            #print "HALO BLYAD!", id0, id1, row[2], row[3]
+
             file_time.write('\n')
             file_click.write('\n')
             continue

@@ -55,7 +55,7 @@ def print_words_full():
             print value
 
 
-def check_vertex(url, count=1, max_count=1):
+def check_vertex(url, count=1, max_count=2):
 
     try:
         # getting home page
